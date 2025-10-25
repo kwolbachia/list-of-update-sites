@@ -3,8 +3,9 @@ sites:
     id: "ImageJ"
     url: "https://update.imagej.net/"
     description: >-
-      Base update site for [ImageJ2](https://imagej.net/software/imagej2). No need
-      to add this to your list of update sites; it is already included.
+      Base update site for Fiji-Stable (along with Fiji and Java-8).
+      No need to add this to your list of update sites;
+      it is already included with Fiji-Stable.
     maintainers:
       - "[ImageJ2 developers](https://imagej.net/people#imagej2)"
 
@@ -12,9 +13,27 @@ sites:
     id: "Fiji"
     url: "https://update.fiji.sc/"
     description: >-
-      Base update site for [Fiji](https://imagej.net/software/fiji) and
-      [core Fiji plugins](https://imagej.net/list-of-extensions).
-      If you downloaded Fiji directly, it is already included.
+      Base update site for Fiji-Stable (along with ImageJ and Java-8).
+      No need to add this to your list of update sites;
+      it is already included with Fiji-Stable.
+    maintainers:
+      - "[Fiji developers](https://imagej.net/people#fiji)"
+
+  - name: "ImageJ (Europe mirror)"
+    id: "ImageJ-micron.ox.ac.uk"
+    url: "https://downloads.micron.ox.ac.uk/fiji_update/mirrors/imagej/"
+    description: >-
+      European mirror for the ImageJ update site. Replace the ImageJ
+      update site with this one for faster updates in Europe.
+    maintainers:
+      - "[ImageJ2 developers](https://imagej.net/people#imagej2)"
+
+  - name: "Fiji (Europe mirror)"
+    id: "Fiji-micron.ox.ac.uk"
+    url: "https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji/"
+    description: >-
+      European mirror for the Fiji update site. Replace the Fiji
+      update site with this one for faster updates in Europe.
     maintainers:
       - "[Fiji developers](https://imagej.net/people#fiji)"
 
@@ -31,12 +50,48 @@ sites:
     id: "Java-8"
     url: "https://sites.imagej.net/Java-8/"
     description: >-
-      Temporary base update site for [ImageJ2](https://imagej.net/software/imagej2) and
-      [Fiji](https://imagej.net/software/fiji) components as everything migrates to Java
-      8. __Will not work with Java 6 or 7.__
-      See [this page](https://imagej.net/news/2016-05-10-imagej-howto-java-8-java-6-java-3d) for details.
+      Base update site for Fiji-Stable (along with ImageJ and Fiji).
+      No need to add this to your list of update sites;
+      it is already included with Fiji-Stable.
     maintainers:
-      - "[ImageJ2 and Fiji developers](https://imagej.net/people)"
+      - "[Fiji developers](https://imagej.net/people)"
+
+  - name: "Java-8 (Europe mirror)"
+    id: "Java-8-micron.ox.ac.uk"
+    url: "https://downloads.micron.ox.ac.uk/fiji_update/mirrors/java-8/"
+    description: >-
+      European mirror for the Java-8 update site. Replace the Java-8
+      update site with this one for faster updates in Europe.
+    maintainers:
+      - "[Fiji developers](https://imagej.net/people)"
+
+  - name: "Fiji-Latest"
+    id: "Fiji-Latest"
+    url: "https://sites.imagej.net/Fiji/"
+    description: >-
+      Base update site for Fiji-Latest.
+      No need to add this to your list of update sites;
+      it is already included with Fiji-Latest.
+    maintainers:
+      - "[Fiji developers](https://imagej.net/people)"
+
+  - name: "Fiji-Latest (Europe mirror)"
+    id: "Fiji-Latest-micron.ox.ac.uk"
+    url: "https://downloads.micron.ox.ac.uk/fiji_update/mirrors/sites-fiji/"
+    description: >-
+      European mirror for the Fiji-Latest update site. Replace the
+      Fiji-Latest update site with this one for faster updates in Europe.
+    maintainers:
+      - "[Fiji developers](https://imagej.net/people)"
+
+  - name: "Fiji-Hotfixes"
+    id: "Fiji-Hotfixes"
+    url: "https://sites.imagej.net/Fiji-Hotfixes/"
+    description: >-
+      **Experimental** bug-fixes addressing specific user issues.
+      Might break other existing workflows; use at your own risk!
+    maintainers:
+      - "[Fiji developers](https://imagej.net/people#fiji)"
 
   - name: "2015-Conference"
     id: "2015-Conference"
@@ -66,6 +121,18 @@ sites:
     maintainers:
       - "[Benjamin Schmid](https://imagej.net/people/bene51)"
 
+  - name: "4d-Tools"
+    id: "4d-Tools"
+    url: "https://sites.imagej.net/4d-Tools"
+    description: >-
+      [4d-Tools](https://imagej.net/plugins/4d-tools) is a set of macros for
+      importing legacy 4D microscopy data and Imaris and Micro-Manager datasets.
+      Importing .MP4 and .MOV requires Stanislav Chizhik's
+      FFmpegVideoImportExport plugins. Also includes a highly experimental
+      Hyperstack Projector plugin.
+    maintainers:
+      - "[Jeff Hardin](https://github.com/jdhardin)"
+
   - name: "ActogramJ"
     id: "ActogramJ"
     url: "https://romulus.oice.uni-erlangen.de/imagej/updatesites/ActogramJ/"
@@ -92,6 +159,14 @@ sites:
       Center (AIC) Fiji Course.
     maintainers:
       - "[AIC Janelia](https://imagej.net/orgs/janelia#advanced-imaging-center)"
+
+  - name: "ALPACA"
+    id: "ALPACA"
+    url: "https://sites.imagej.net/ALPACA/"
+    description: >-
+      A collection of macros to study cilia.
+    maintainers:
+      - "[Torsten Schmenger](https://github.com/tschmenger/)"
 
   - name: "AMPT"
     id: "AMPT"
@@ -218,9 +293,9 @@ sites:
     url: "https://sites.imagej.net/BatchTools/"
     description: >-
       [Batch Tools](https://imagej.net/plugins/batch-tools) provides a toolbar
-      to support batch image processing and analysis, including batch merge channels,
-      composite conversion, Z-projection, channel B&C and colour adjustment, file
-      export, and cell count, gray value & area.
+      to support batch image processing and analysis, including batch extract,
+      merge channels, composite conversion, Z-projection, channel B&C and colour
+      adjustment, file export, and cell count, gray value & area measurement.
     maintainers:
       - "[Neville S Ng](https://github.com/neville-s-ng)"
 
@@ -334,6 +409,17 @@ sites:
     maintainers:
       - "[Jan Brocher](https://imagej.net/people/biovoxxel)"
 
+  - name: "BioVoxxel Figure Tools"
+    id: "bvft"
+    url: "https://sites.imagej.net/bvft/"
+    description: >-
+     The figure tools are meant to connect Fiji with Inkscape to flexibly prepare images for and create
+     publication figures with the highest possible data quality.
+     An introduction video to version 2.2.0 can be found [here](https://youtu.be/F6ll37NOgXc?si=SOICjiqGzw4RCUDR)
+    maintainers:
+      - "[Jan Brocher](https://imagej.net/people/biovoxxel)"
+
+
   - name: "Blind Analysis Tools"
     id: "Astja"
     url: "https://sites.imagej.net/Astja/"
@@ -400,10 +486,12 @@ sites:
     id: "Ulman"
     url: "https://sites.imagej.net/Ulman/"
     description: >-
-      Implementation of measures and front-end plugins used in and related to
+      Implementation of measures and front-end Fiji plugins used in and related to
       the [Cell Tracking Challenge](http://www.celltrackingchallenge.net).
+      It also provides an extension for importing, editing and exporting 
+      the results of the CellTrackingChallenge directly in the Mastodon plugin.
     maintainers:
-      - "[Vladimír Ulman](mailto:ulman@mpi-cbg.de)"
+      - "[Vladimír Ulman](https://imagej.net/people/xulman)"
 
   - name: "Cellular Imaging"
     id: "CellularImaging"
@@ -620,8 +708,8 @@ sites:
     id: "DendriteDynamicsTracker"
     url: "https://sites.imagej.net/DendriteDynamicsTracker/"
     description: >-
-      Dendrite-Dynamics-Tracker is a plugin based on [TrackMate](https://imagej.net/plugins/trackmate/) 
-      and [AnalyzeSkeleton](https://imagej.net/plugins/analyze-skeleton/index) that can measure 
+      Dendrite-Dynamics-Tracker is a plugin based on [TrackMate](https://imagej.net/plugins/trackmate/)
+      and [AnalyzeSkeleton](https://imagej.net/plugins/analyze-skeleton/index) that can measure
       the dynamics of dendrites by tracking their tip over time.
     maintainers:
       - "[Jean-Yves Tinevez](https://imagej.net/people/tinevez)"
@@ -634,6 +722,18 @@ sites:
       hologram reconstruction, numerical propagation, and phase unwrapping.
     maintainers:
       - "[David Cohoe](mailto:dcohoe@pdx.edu)"
+
+  - name: "DHPSFU"
+    id: "DHPSFU"
+    url: "https://sites.imagej.net/DHPSFU/"
+    description: >-
+      [DHPSFU](https://github.com/TheLaueLab/DHPSFU_Fiji_Plugin)
+      provides a suite of tools for analysing 3D SMLM/SPT data obtained
+      using Double Helix (DH) PSF microscopy based on unmixing (DHPSFU)
+      of fitted localisation data using distance pairing.
+    maintainers:
+      - "[Ziwei Zhang](mailto:zz409@cam.ac.uk)"
+      - "[The Laue Lab](https://github.com/TheLaueLab)"
 
   - name: "DiameterJ"
     id: "DiameterJ"
@@ -668,6 +768,22 @@ sites:
       Plugin for semi-automated [analysis of DNA FISH spots](https://github.com/embl-cba/DNA-FISH#analyse-fish-spots---fiji-plugin).
     maintainers:
       - "Christian Tischer"
+
+  - name: "Dorsal Horn Mapping"
+    id: "Dorsal-Horn-Mapping"
+    url: "https://sites.imagej.net/ReferenceFrameToolkit/"
+    description: >-
+      Plugin for [mapping of cells on epifluorescence images of murine dorsal horns](https://imagej.net/plugins/dorsal-horn-mapping).
+    maintainers:
+      - "Lucas Röttger"
+      
+  - name: "Draw 3D ROI"
+    id: "Draw3DROI"
+    url: "https://sites.imagej.net/Draw3DROI/"
+    description: >-
+      A Fiji plugin to create 3D masks from hand-drawn 2D ROIs. 
+    maintainers:
+      - "[Andrew McCall](https://imagej.net/people/andmccall)"
 
   - name: "ElastixWrapper"
     id: "ElastixWrapper"
@@ -752,6 +868,18 @@ sites:
     maintainers:
       - "[C.TURIÈS](https://imagej.net/people/cyrilturies)"
 
+  - name: "FAST-HIPPOS"
+    id: "FAST-HIPPOS"
+    url: "https://sites.imagej.net/FAST-HIPPOS/"
+    description: >-
+      [FAST-HIPPOS](https://imagej.net/plugins/fast-hippos) (FLIM Analysis of
+      Single-cell Traces for Hit Identification of Phenotypes in Pooled Optical
+      Screening) is a collection of macros to analyze time-lapse live-cell (FLIM)
+      data, and to automatically identify hit cells and save their microscope stage
+      coordinates to a file readable by Leica LAS X Navigator.
+    maintainers:
+      - "Bram van den Broek"
+
   - name: "Fast4DReg"
     id: "Fast4DReg"
     url: "https://sites.imagej.net/Fast4DReg/"
@@ -771,6 +899,16 @@ sites:
       [FFmpeg](https://www.ffmpeg.org/)-supported formats via native bindings.
     maintainers:
       - "[Curtis Rueden](https://imagej.net/people/ctrueden)"
+
+  - name: "FFmpegVideoImportExport"
+    id: "FFmpegVideoImportExport"
+    url: "https://sites.imagej.net/VideoImportExport/"
+    description: >-
+      The [FFmpegVideoImportExport](https://imagej.net/plugins/ffmpeg-video-import-export) 
+      allows to import compressed video files into a virtual stack or hyperstack and
+      export a stack as compressed video file using JavaCV interface to FFmpeg.
+    maintainers:
+      - "[Stanislav Chizhik](https://imagej.net/people/anotherche)"
 
   - name: "FibrilJ"
     id: "FibrilJ"
@@ -822,9 +960,9 @@ sites:
     description: >-
       [FLIMJ](https://imagej.net/plugins/flimj) is a plugin for analyzing FLIM
       data in ImageJ, using the [FLIMLib](https://flimlib.github.io/)
-      library.
+      library. ***Requires Fiji-Latest.***
     maintainers:
-      - "Dasong Gao"
+      - "Edward Evans"
       - "Curtis Rueden"
 
   - name: "FlyReg"
@@ -834,6 +972,28 @@ sites:
       [FlyReg](https://github.com/tischi/fly-reg) is a plugin for the 3D registration of fly (drosophila) embryos.
     maintainers:
       - "Christian Tischer"
+  
+  - name: "Foci Analyzer"
+    id: "Foci-Analyzer"
+    url: "https://sites.imagej.net/Foci-Analyzer/"
+    description: >-
+      [Foci Analyzer](https://imagej.net/plugins/foci-analyzer) is a user-friendly and extensive Fiji macro
+      designed to detect, analyze and visualize foci in 2D and 3D fluorescence microscopy images of cells and tissue.
+      The script utilizes deep-learning tools [StarDist](https://imagej.net/plugins/stardist) and
+      [Cellpose](https://github.com/MouseLand/cellpose) for accurate 2D/3D segmentation of cells or nuclei.
+      Advanced libraries like [CLIJ2](https://clij.github.io/) and [MorpholobJ](https://imagej.net/plugins/morpholibj)
+      are employed for efficient and reliable foci detection across different imaging modalities (confocal, widefield)
+      and resolutions, with minimal user input.
+    maintainers:
+      - "Bram van den Broek"
+
+  - name: "FOCUST"
+    id: "FOCUST"
+    url: "https://sites.imagej.net/FOCUST/"
+    description: >-
+      [FOCUST](https://sebastianamos.github.io/FOCUST-Plugin-Site/) is the Fluorescent Object and Cell gpU-accelerated Segmentation Toolbox.
+    maintainers:
+      - "[Sebastian Amos](https://github.com/SebastianAmos)"
 
   - name: "FPBioimage"
     id: "Fpbioimage"
@@ -863,6 +1023,16 @@ sites:
       [citations](https://imagej.net/plugins/fraclac/FLHelp/FLCitations.htm).
     maintainers:
       - "[A. Karperien](https://imagej.net/User:Akarperien)"
+
+  - name: "FRAP-Tools"
+    id: "FRAP-Tools"
+    url: "https://sites.imagej.net/FRAP-Tools"
+    description: >-
+      [FRAP-Tools](https://imagej.net/plugins/frap-tools) is a set of scripts for
+      generating, displaying, and analyzing fluorescence recovery after photobleaching
+      (FRAP) datasets.
+    maintainers:
+      - "[Jeff Hardin](https://github.com/jdhardin)"
 
   - name: "FreQ"
     id: "FreQ"
@@ -944,11 +1114,21 @@ sites:
     url: "https://sites.imagej.net/GutAnalysisToolbox/"
     description: >-
       [Gut Analysis Toolbox](https://imagej.net/plugins/gut-analysis-toolbox) enables semi-automated analysis of
-      the neuronal and glial distribution within the gut wall in 2D. It uses a combination of FIJI macros, StarDist
+      the neuronal and glial distribution within the gut wall in 2D. It uses a combination of Fiji macros, StarDist
       and deepImageJ for automated segmentation. The primary focus is on characterising the enteric nervous system.
       The aim is to expand the analysis to other celltypes within the gut and enable 3D analysis.
     maintainers:
       - "[Pradeep Rajasekhar](https://imagej.net/people/pr4deepr)"
+  
+  - name: "H5FFmpeg"
+    id: "CailabUM-H5FFMPEG"
+    url: "https://sites.imagej.net/CailabUM-H5FFMPEG/"
+    description: >-
+      Plugins allows video compression and decompression in HDF5 file format.
+      From the Cai Lab at
+      [Michigan Medicine](https://www.cai-lab.org/).
+    maintainers:
+      - "[Bin Duan](mailto:duanb@umich.edu)"
 
   - name: "Hadim"
     id: "Hadim"
@@ -1131,7 +1311,7 @@ sites:
     description: >-
       Imaging_FCS 1.491 is a basic ImageJ plugin to calculate and view
       spatio-temporal correlation functions from 16 bit gray tiff stack files.
-      It was written under FIJI (ImageJ 1.51f; Java 1.8.0_102) and requires
+      It was written under Fiji (ImageJ 1.51f; Java 1.8.0_102) and requires
       Imagescience for statistics (simulator) and Apache Poi for file reading
       and writing.
     maintainers:
@@ -1201,6 +1381,15 @@ sites:
       - "[Jan Schier](mailto:schier@utia.cas.cz)"
       - "[Jan Švihlík](mailto:Jan.Svihlik@vscht.cz)"
 
+  - name: "JavaCVInstaller"
+    id: "JavaCVInstaller"
+    url: "https://sites.imagej.net/JavaCVInstaller/"
+    description: >-
+      The [JavaCV Installer](https://imagej.net/plugins/javacv-installer) is a 
+      plugin for managing the installation of JavaCV components in ImageJ.
+    maintainers:
+      - "[Stanislav Chizhik](https://imagej.net/people/anotherche)"
+  
   - name: "JAX Eye"
     id: "MarkKrebs"
     url: "https://sites.imagej.net/MarkKrebs/"
@@ -1431,11 +1620,21 @@ sites:
     id: "Mars"
     url: "https://sites.imagej.net/Mars/"
     description: >-
-      [Mars](https://duderstadt-lab.github.io/mars-docs/), a platform for storage,
+      (Supports Fiji-Stable Java-8) [Mars](https://duderstadt-lab.github.io/mars-docs/), a platform for storage,
       exploration, and processing of image-derived properties of biomolecules
       together with enhanced OME metadata.
     maintainers:
-      - "[Karl Duderstadt](mailto:duderstadt@biochem.mpg.de)"
+      - "[Karl Duderstadt](mailto:karl.duderstadt@tum.de)"
+
+  - name: "Mars-Latest"
+    id: "Mars-Latest"
+    url: "https://sites.imagej.net/Mars-Latest/"
+    description: >-
+      (Supports Fiji-Latest Java-21+) [Mars](https://duderstadt-lab.github.io/mars-docs/), a platform for storage,
+      exploration, and processing of image-derived properties of biomolecules
+      together with enhanced OME metadata.
+    maintainers:
+      - "[Karl Duderstadt](mailto:karl.duderstadt@tum.de)"
 
   - name: "Maskflow"
     id: "Maskflow"
@@ -1466,7 +1665,55 @@ sites:
       on steroids.
     maintainers:
       - "[Tobias Pietzsch](https://imagej.net/people/tpietzsch)"
-      - "[Jean-Yves Tinevez](https://imagej.net/people/tinevez)"
+      - "[Jean-Yves Tinevez](https://imagej.net/people/tinevez)"      
+
+  - name: "Mastodon-Benchmark"
+    id: "Mastodon-Benchmark"
+    url: "https://sites.imagej.net/Mastodon-Benchmark/"
+    description: >-
+      Language and framework for [reproducible benchmarking](https://github.com/mastodon-sc/mastodon-benchmark)
+      of Mastodon main displays. It measures reaction times of BigDataViewer
+      and Trackscheme windows after they are requested to change their views.
+      The changing of the views is flexibly described with the language.
+    maintainers:
+      - "[Vladimír Ulman](https://imagej.net/people/xulman)"
+
+  - name: "Mastodon-DeepLineage"
+    id: "Mastodon-DeepLineage"
+    url: "https://sites.imagej.net/Mastodon-DeepLineage/"
+    description: >-
+      [Mastodon-DeepLineage](https://github.com/mastodon-sc/mastodon-deep-lineage)
+      provides an extension for the Mastodon plugin and can only be used in conjunction
+      with it. Mastodon allows tracking cell lineages in 3D+t images.
+      Mastodon-DeepLineage extends this with a collection of tools to analyse
+      lineages of tracked objects.
+    maintainers: 
+      - "[Stefan Hahmann](https://imagej.net/people/stefanhahmann)"
+      - "[Matthias Arzt](https://imagej.net/people/maarzt)"
+
+  - name: "Mastodon-Simulator"
+    id: "Mastodon-Simulator"
+    url: "https://sites.imagej.net/Mastodon-Simulator/"
+    description: >-
+      [Cell population growth simulator](https://github.com/mastodon-sc/mastodon-simulator)
+      implemented in Mastodon. The project was initially meant to provide test datasets for
+      Mastodon-Benchmark.
+    maintainers:
+      - "[Vladimír Ulman](https://imagej.net/people/xulman)"
+
+  - name: "Mastodon-Tomancak"
+    id: "Mastodon-Tomancak"
+    url: "https://sites.imagej.net/Mastodon-Tomancak/"
+    description: >-
+      [Mastodon-Tomancak](https://github.com/mastodon-sc/mastodon) provides extensions 
+      for the Mastodon plugin and can only be used in conjunction with it.
+      Mastodon allows tracking cell lineages in 3D+t images.
+      Mastodon-Tomancak extends this with a collection of tools to edit, analyse and visualise
+      lineages of tracked objects.
+    maintainers:
+      - "[Matthias Arzt](https://imagej.net/people/maarzt)"
+      - "[Stefan Hahmann](https://imagej.net/people/stefanhahmann)"
+      - "[Vladimír Ulman](https://imagej.net/people/xulman)"
 
   - name: "Mcat"
     id: "Mcat"
@@ -1766,8 +2013,8 @@ sites:
     id: "Neuroanatomy"
     url: "https://sites.imagej.net/Neuroanatomy/"
     description: >-
-      Image Processing Tools for Neuroanatomy and Tree-like structures
-      ([list](https://imagej.net/update-sites/neuroanatomy)).
+      Installs [SNT](https://imagej.net/plugins/snt/), the ImageJ framework
+      for quantification of neuronal anatomy
     maintainers:
       - "[Tiago Ferreira](https://imagej.net/people/tferr)"
 
@@ -1799,6 +2046,17 @@ sites:
       page for more details.
     maintainers:
       - "[Niko Ehrenfeuchter](https://imagej.net/people/ehrenfeu)"
+
+  - name: "Nscale-segmentation"
+    id: "Nscale-segmentation"
+    url: "https://sites.imagej.net/Nscale_segmentation/"
+    description: >-
+      A customizable segmentation tool for fluorescence cell microscopy
+      analysis used to separate clustered/touching nuclei. See the
+      [Nscale-segmentation](https://imagej.net/plugins/nscale-segmentation)
+      page for more information.
+    maintainers:
+      - "[Eden Tamrat](edentamrat@gmail.com)"
 
   - name: "Nuclear-Medicine"
     id: "Nuclear-Medicine"
@@ -1947,8 +2205,8 @@ sites:
       - "[Nicolas Jaccard](http://www.nicjac.net)"
 
   - name: "PhotoBend"
-    id: "Anotherche"
-    url: "https://sites.imagej.net/Anotherche/"
+    id: "PhotoBend"
+    url: "https://sites.imagej.net/PhotoBend/"
     description: >-
       The [PhotoBend](https://imagej.net/plugins/photobend) is a collection of
       specialized plugins providing tracking a needle-like crystal
@@ -1956,11 +2214,9 @@ sites:
       1. tracking the curvature of uniformly curved rods changing with time;
       2. tracking a laser spot movement used in the laser beam deflection
       technique.
-      Additionally, two auxiliary plugins for reading and writing compressed
-      video using FFmpeg are included, which can be used standalone.
     maintainers:
       - "[Stanislav Chizhik](https://imagej.net/people/anotherche)"
-
+  
   - name: "PhotonImaging"
     id: "PhotonImaging"
     url: "https://sites.imagej.net/PhotonImaging/"
@@ -1982,6 +2238,15 @@ sites:
     maintainers:
       - "[XU Xiaochun](mailto:mbixxc@nus.edu.sg)"
       - "[Felix Martin Margadant](mailto:mbifmm@nus.edu.sg)"
+
+  - name: "PIM-IBIS"
+    id: "Abastien"
+    url: "https://sites.imagej.net/Abastien/"
+    description: >-
+      Update site for the [IBIS Microscopy & Imaging Platform](https://microscopie.ibis.ulaval.ca/)
+      at [ULaval](https://www.ulaval.ca/).
+    maintainers:
+      - "[Alexandre Bastien](https://imagej.net/people/alexandrebastien)"
 
   - name: "PixFRET"
     id: "PixFRET"
@@ -2021,6 +2286,18 @@ sites:
     maintainers:
       - "[Olivier Burri](https://people.epfl.ch/olivier.burri?lang=en&cvlang=en)"
 
+  - name: "Puncta Process"
+    id: "process-puncta"
+    url: "https://sites.imagej.net/puncta_process/"
+    description: >-
+      The [Puncta Process PlugIn](https://imagej.net/plugins/process-puncta/) is a practical analysis tool for counting puncta in 3D image data.
+      The process uses single-channel data to produce three specific values: - **Puncta Volume** An average number
+      of voxels (volume picture elements) of the object times z,y, and z calibrations. - **Puncta Number** The
+      average number of puncta counts within a given ROI (Region of Interest) - **ROI Intensity** The measures the
+      overall pixel intensity over the Region of Interest - The results are summarized in MS Excel format.
+    maintainers:
+      - "[Dan Higgins](https://github.com/DanHUMassMed)"
+
   - name: "Qualitative Annotations"
     id: "Qualitative-Annotations"
     url: "https://sites.imagej.net/Qualitative-Annotations/"
@@ -2034,10 +2311,10 @@ sites:
     id: "Quantixed"
     url: "https://sites.imagej.net/Quantixed/"
     description: >-
-      ImageJ macros for making figures, blind analysis and more. Maintenance
-      and issues [here](https://github.com/quantixed/imagej-macros/).
+      ImageJ macros for making figures, annotating movies, blind analysis and more.
+      Maintenance and issues [here](https://github.com/quantixed/imagej-macros/).
     maintainers:
-      - "[Stephen Royle](https://mechanochemistry.org/royle)"
+      - "[Stephen Royle](https://github.com/quantixed)"
 
   - name: "QuickFigures"
     id: "QuickFigures"
@@ -2053,7 +2330,7 @@ sites:
 
   - name: "QuimP"
     id: "QuimP"
-    url: "https://pilip.lnx.warwick.ac.uk/quimp-update-site/"
+    url: "https://quimp.warwick.ac.uk/quimp-update-site/"
     description: >-
       [QuimP](https://warwick.ac.uk/quimp) is software for tracking cellular
       shape changes and dynamic distributions of fluorescent reporters at the
@@ -2137,6 +2414,21 @@ sites:
     maintainers:
       - "[Benjamin Schmid](https://imagej.net/people/bene51)"
 
+  - name: "SAMJ"
+    id: "SAMJ"
+    url: "https://sites.imagej.net/SAMJ/"
+    description: >-
+      SAMJ is a Fiji plugin for annotating microscopy images using
+      various versions of the Segment Anything Model (SAM). See the
+      [GitHub organization](https://github.com/segment-anything-models-java/)
+      for details.
+    maintainers:
+      - "[Carlos Garcia](https://imagej.net/people/carlosuc3m)"
+      - "[Daniel Sage](mailto:daniel.sage@epfl.ch)"
+      - "[Arrate Muñoz-Barrutia](mailto:mamunozb@ing.uc3m.es)"
+      - "[Vladimír Ulman](https://imagej.net/people/xulman)"
+      - "[Curtis Rueden](https://imagej.net/people/ctrueden)"
+
   - name: "Sceptical Physiologist"
     id: "Scepticalphysiologist"
     url: "https://sites.imagej.net/Scepticalphysiologist/"
@@ -2173,10 +2465,18 @@ sites:
       ScientiFig is a tool to build publication-ready scientific figures
       similar to FigureJ from the IBMP-CNRS site. This version of SF is
       deprecated. It must be used in combination with the 'Fiji-Legacy' update
-      site (on old FIJI systems still using java 6). Note also that this
+      site (on old Fiji systems still using java 6). Note also that this
       version of SF is not compatible with 'Tissue Analyser'.
     maintainers:
       - "[Benoit Aigouy](mailto:scientifig@gmail.com)"
+
+  - name: "SCiF Confocal Simulator"
+    id: "SCIF-Confocal-Simulator"
+    url: "https://sites.imagej.net/SCiF_ConfocalSimulator/"
+    description: >-
+      A laser scanning confocal simulator.
+    maintainers:
+      - "[Gert-Jan Kremers](mailto:g.kremers@erasmusmc.nl)"
 
   - name: "Scijava Jupyter Kernel"
     id: "Scijava-jupyter-kernel"
@@ -2187,9 +2487,20 @@ sites:
     maintainers:
       - "[Hadrien Mary](https://imagej.net/people/hadim)"
 
-  - name: "SciView"
+  - name: "SciJava Ops"
+    id: "scijava-ops"
+    url: "https://sites.imagej.net/scijava-ops/"
+    description: >-
+      A framework for extensible algorithm execution. REQUIRES JAVA 11+. See source
+      [on GitHub](https://github.com/scijava/scijava).
+    maintainers:
+      - "[Gabriel Selzer](https://imagej.net/people/gselzer)"
+      - "[Curtis Rueden](https://imagej.net/people/ctrueden)"
+      - "[Mark Hiner](https://imagej.net/people/hinerm)"
+
+  - name: "sciview"
     id: "sciview"
-    url: "https://sites.imagej.net/sciview-buttercup/"
+    url: "https://sites.imagej.net/sciview/"
     description: >-
       sciview 3D/VR/AR visualization package for ImageJ. See the documentation [here](https://docs.scenery.graphics/sciview) and source
       [on GitHub](https://github.com/scenerygraphics/sciview).
@@ -2236,6 +2547,14 @@ sites:
       format.
     maintainers:
       - "[Burkhard Hoeckendorf](mailto:hoeckendorfb@janelia.hhmi.org)"
+
+  - name: "SIMworks"
+    id: "SIMworks"
+    url: "https://sites.imagej.net/SIMworks/"
+    description: >-
+      SIMworks – an integrated software suite for quality-controlled augmented quantitative structured illumination microscopy.
+    maintainers:
+      - "Lior Pytowski"
 
   - name: "Slide Set"
     id: "Slide-Set"
@@ -2400,7 +2719,7 @@ sites:
       A couple of Fiji scripts to ease daily evo-devo image analysis life, from
       Tomancak lab.
     maintainers:
-      - "[Vladimír Ulman](mailto:ulman@mpi-cbg.de)"
+      - "[Vladimír Ulman](https://imagej.net/people/xulman)"
       - "[Matthias Arzt](https://imagej.net/people/maarzt)"
 
   - name: "Tr2d"
@@ -2436,6 +2755,19 @@ sites:
     maintainers:
       - "[Jean-Yves Tinevez](https://imagej.net/people/tinevez)"
 
+  - name: "TrackMate-GEFF"
+    id: "TrackMate-GEFF"
+    url: "https://sites.imagej.net/TrackMate-GEFF"
+    description: >-
+      This update site provides exporter and importer to and from
+      [GEFF files](https://live-image-tracking-tools.github.io/geff/),
+      a tracking file format made to exchange data bewtween tracking 
+      software.
+      See [this page](https://imagej.net/plugins/trackmate/actions/geff_exporter) 
+      for information.
+    maintainers:
+      - "[Jean-Yves Tinevez](https://imagej.net/people/tinevez)"
+
   - name: "TrackMate-Helper"
     id: "TrackMate-Helper"
     url: "https://sites.imagej.net/TrackMate-Helper"
@@ -2461,6 +2793,52 @@ sites:
       in 2D or 3D.
     maintainers:
       - "[Jean-Yves Tinevez](https://imagej.net/people/tinevez)"
+
+  - name: "TrackMate-InTRACKtive"
+    id: "TrackMate-InTRACKtive"
+    url: "https://sites.imagej.net/TrackMate-InTRACKtive"
+    description: >-
+      This update site provides TrackMate with an action to open the current 
+      tracking data in 
+      [InTRACKtive](https://github.com/royerlab/inTRACKtive/blob/main/README.md),
+      a application for visualization and sharing of cell tracking data in the browser.
+      This update site requires the TrackMate-GEFF update site to be installed as well.
+      See [this page](https://imagej.net/plugins/trackmate/actions/trackmate-intracktive) 
+      for installation instructions and information.
+    maintainers:
+      - "[Jean-Yves Tinevez](https://imagej.net/people/tinevez)"
+      - "Teun Huijben"
+
+  - name: "TrackMate-Kymograph"
+    id: "TrackMate-Kymograph"
+    url: "https://sites.imagej.net/TrackMate-Kymograph"
+    description: >-
+      This update site provides the
+      [TrackMate-Kymograph](https://imagej.net/plugins/trackmate/extensions/trackmate-kymograph)
+      extension. This module integrates into TrackMate, and let users trace and analyze
+      *moving* kymographs, using TrackMate tracks as moving landmarks.
+    maintainers:
+      - "[Jean-Yves Tinevez](https://imagej.net/people/tinevez)"
+
+  - name: "TrackMate-Lacss"
+    id: "TrackMate-Lacss"
+    url: "https://sites.imagej.net/TrackMate-Lacss"
+    description: >-
+      This update site provides
+      [TrackMate-Lacss](https://imagej.net/plugins/trackmate/trackmate-lacss),
+      a pretrained deep-learning library called
+      [Lacss](https://github.com/jiyuuchc/lacss)
+      to detect and segment cells serving as
+      a detector to the popular cell/object tracker plugin
+      [TrackMate](https://imagej.net/plugins/trackmate/index).
+      This plugin REQUIRES a python enviorment setup. See the lacss github
+      or [documentation](https://jiyuuchc.github.io/lacss/install/).
+      This plugin is overall is thin Java Wrapper around the Lacss python module,
+      which runs as a seperate process. Java communicates with the python
+      process via anonymous pipe - sending messages encoded in protobuf.
+    maintainers:
+      - "[Ji Yu](https://github.com/jiyuuchc)"
+      - "[Nicholas Kuang](https://github.com/Nick-Kuang)"
 
   - name: "TrackMate-MorphoLibJ"
     id: "TrackMate-MorphoLibJ"
@@ -2552,6 +2930,16 @@ sites:
     maintainers:
       - "[Elise Laruelle](https://www.slcu.cam.ac.uk/staff/elise-laruelle)"
 
+  - name: "TWOMBLI"
+    id: "TWOMBLI"
+    url: "https://sites.imagej.net/TWOMBLI/"
+    description: >-
+      Plugin implementation of [TWOMBLI](https://dx.doi.org/10.26508/lsa.202000880), for the
+      analysis of network structures such as extra-cellular matrix, vascular or cytoskeletal
+      components.
+    maintainers:
+      - "[David Barry](mailto:david.barry@crick.ac.uk)"
+
   - name: "U-Net Segmentation"
     id: "Falk"
     url: "https://sites.imagej.net/Falk/"
@@ -2575,6 +2963,20 @@ sites:
     maintainers:
       - "[Ben Smith](mailto:benjamin.smith@berkeley.edu)"
 
+  - name: "Ultrack"
+    id: "ultrack"
+    url: "https://sites.imagej.net/ultrack/"
+    description: >-
+      [Ultrack](https://imagej.net/plugins/ultrack) is a large-scale cell
+      tracking under segmentation uncertainty.
+      Capable of managing millions of segmentation instances, it provides
+      competitive results with or without deep learning. The method optimizes
+      tracking by using a hierarchy of segmentation hypotheses to select
+      segments across frames.
+    maintainers:
+      - "[Ilan Theodoro](mailto:ilan.silva@czbiohub.org)"
+      - "[Jordao Bragantini](mailto:jordao.bragantini@czbiohub.org)"
+
   - name: "Vale lab plugins"
     id: "Nico"
     url: "https://sites.imagej.net/Nico/"
@@ -2595,6 +2997,15 @@ sites:
     maintainers:
       - "[Wilson R Adams](mailto:wilson.adams@vanderbilt.edu) Vanderbilt Biophotonics Center, Nashville, TN, USA"
 
+  - name: "VCell Simulation Results Viewer"
+    id: "VCellSimulationResultsViewer"
+    url: "https://sites.imagej.net/VCell-Simulations-Result-Viewer/"
+    description: >-
+      Plugin for accesing spatial simulation results exported in the N5 file format from VCell.
+    maintainers:
+      - "[Ezequiel Valencia](mailto:evalencia@uchc.edu)"
+      - "[Jim Schaff](mailto:schaff.jim@gmail.com)"
+
   - name: "VerciniAnalysisJ"
     id: "HoldenLabBiophys"
     url: "https://sites.imagej.net/VerciniAnalysisJ/"
@@ -2614,17 +3025,17 @@ sites:
       [on GitHub](https://github.com/Sweeneyian/VersiLab_Plugin).
     maintainers:
       - "[Ian Sweeney](https://imagej.net/people/sweeneyian)"
-
-  - name: "Virtual Cell"
-    id: "VCell"
-    url: "https://sites.imagej.net/VCell/"
+  
+  - name: "Virtual-Orientation-Tools-VOTj"
+    id: "VOTj"
+    url: "https://sites.imagej.net/Virtual-Orientation-Tool-VOTj/"
     description: >-
-      Plugins for using [Virtual Cell](https://imagej.net/software/virtual-cell) with
-      ImageJ.
+      [Virtual-Orientation-Tools-VOTj](https://github.com/sankeert1999/Virtual-Orientation-Tools-VOTj)
+      is a set of Fiji plugins designed to center and align objects of interest
+      both horizontally and vertically from their base orientation. The program
+      is available through a Fiji plugin.
     maintainers:
-      - "[Michael Blinov](mailto:blinov@uchc.edu)"
-      - "[Frank Morgan](mailto:frm@uchc.edu)"
-      - "[Ion Moraru](mailto:moraru@uchc.edu)"
+      - "[Sankeert Satheesan](mailto:sankeert1999@gmail.com)"
 
   - name: "Visualization Toolset"
     id: "VisualizationToolset"
